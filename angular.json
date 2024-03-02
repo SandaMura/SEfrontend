@@ -25,7 +25,7 @@
               "apps/SEfrontend/src/assets"
             ],
             "styles": [
-              "apps/SEfrontend/src/styles.css"
+              "apps/SEfrontend/src/styles.scss"
             ],
             "scripts": []
           },
@@ -87,12 +87,15 @@
               "apps/SEfrontend/src/assets"
             ],
             "styles": [
-              "apps/SEfrontend/src/styles.css"
+              "apps/SEfrontend/src/styles.scss"
             ],
             "scripts": []
           }
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "2f79d2c0-bd33-4f46-b19a-cf2568c94edd"
   }
 }
