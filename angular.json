@@ -25,7 +25,9 @@
               "apps/SEfrontend/src/assets"
             ],
             "styles": [
-              "apps/SEfrontend/src/styles.scss"
+              "apps/SEfrontend/src/styles.scss",
+              "node_modules/primeng/resources/themes/saga-green/theme.css",
+              "node_modules/primeng/resources/primeng.min.css"
             ],
             "scripts": []
           },
@@ -87,7 +89,9 @@
               "apps/SEfrontend/src/assets"
             ],
             "styles": [
-              "apps/SEfrontend/src/styles.scss"
+              "apps/SEfrontend/src/styles.scss",
+              "node_modules/primeng/resources/themes/saga-green/theme.css",
+              "node_modules/primeng/resources/primeng.min.css"
             ],
             "scripts": []
           }
