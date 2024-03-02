@@ -1,7 +1,7 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
   "version": 1,
-  "newProjectRoot": "projects",
+  "newProjectRoot": "libs",
   "projects": {
     "SEfrontend": {
       "projectType": "application",
@@ -90,6 +90,39 @@
               "apps/SEfrontend/src/styles.scss"
             ],
             "scripts": []
+          }
+        }
+      }
+    },
+    "questions": {
+      "projectType": "library",
+      "root": "libs/questions",
+      "sourceRoot": "libs/questions/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "project": "libs/questions/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "libs/questions/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "libs/questions/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "tsConfig": "libs/questions/tsconfig.spec.json",
+            "polyfills": [
+              "zone.js",
+              "zone.js/testing"
+            ]
           }
         }
       }
