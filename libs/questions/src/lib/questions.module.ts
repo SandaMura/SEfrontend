@@ -1,6 +1,8 @@
 import { NgModule } from '@angular/core';
 import { QuestionsComponent } from './questions.component';
 import {QuestionsRoutingModule} from "./questions-routing.module";
+import {RadioButtonModule} from "primeng/radiobutton";
+import {FormsModule} from "@angular/forms";
 
 
 
@@ -9,7 +11,9 @@ import {QuestionsRoutingModule} from "./questions-routing.module";
     QuestionsComponent
   ],
   imports: [
-    QuestionsRoutingModule
+    QuestionsRoutingModule,
+    RadioButtonModule,
+    FormsModule
   ],
   exports: [
     QuestionsComponent

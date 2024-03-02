@@ -1,3 +1,25 @@
-<p>
-  questions works!
-</p>
+<link rel="stylesheet" href="../../../../apps/SEfrontend/src/styles.scss">
+<div class="card flex justify-content-center">
+  <div class="flex flex-wrap gap-3">
+    <div class="flex align-items-center">
+      <p-radioButton name="pizza" value="Cheese" [(ngModel)]="ingredient" Id="ingredient1"></p-radioButton>
+      <label for="ingredient1" class="ml-2">Cheese</label>
+    </div>
+
+    <div class="flex align-items-center">
+      <p-radioButton name="pizza" value="Mushroom" [(ngModel)]="ingredient" Id="ingredient2"></p-radioButton>
+      <label for="ingredient2" class="ml-2">Mushroom</label>
+    </div>
+
+    <div class="flex align-items-center">
+      <p-radioButton name="pizza" value="Pepper" [(ngModel)]="ingredient" Id="ingredient3"></p-radioButton>
+      <label for="ingredient3" class="ml-2">Pepper</label>
+    </div>
+
+    <div class="flex align-items-center">
+      <p-radioButton name="pizza" value="Onion" [(ngModel)]="ingredient" Id="ingredient4"></p-radioButton>
+      <label for="ingredient4" class="ml-2">Onion</label>
+    </div>
+  </div>
+</div>
+

@@ -6,5 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['questions.component.scss']
 })
 export class QuestionsComponent {
+  ingredient: any;
 
 }
