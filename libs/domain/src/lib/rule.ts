@@ -6,5 +6,5 @@ export interface Rule {
   budget: number;
   distance: number;
   duration: string;
-  scope: string
+  scope: Array<string>;
 }
