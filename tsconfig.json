@@ -17,6 +17,9 @@
     "moduleResolution": "node",
     "importHelpers": true,
     "paths": {
+      "domain": [
+        "dist/domain"
+      ],
       "questions": [
         "dist/questions"
       ]
