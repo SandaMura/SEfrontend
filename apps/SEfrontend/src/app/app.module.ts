@@ -8,7 +8,7 @@ const routes: any[]=[
     path: '',
     children: [
       {
-        path: 'question',
+        path: 'questions',
         loadChildren: () => import('libs/questions/src/public-api').then(m => m.QuestionsModule)
       }
     ]
