@@ -1,9 +1,10 @@
-import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
-import { AppComponent } from './app.component';
-import { RouterModule } from '@angular/router';
+import {NgModule} from '@angular/core';
+import {BrowserModule} from '@angular/platform-browser';
+import {AppComponent} from './app.component';
+import {RouterModule} from '@angular/router';
+import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
 
-const routes: any[]=[
+const routes = [
   {
     path: '',
     children: [
@@ -21,9 +22,11 @@ const routes: any[]=[
   ],
   imports: [
     BrowserModule,
-    RouterModule.forRoot((routes))
+    BrowserAnimationsModule,
+    RouterModule.forRoot(routes)
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+}
