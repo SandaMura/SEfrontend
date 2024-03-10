@@ -12,7 +12,7 @@ export class QuestionsService {
 
   }
 
-  public getQuestions() : Observable<Question>{
-    return this.httpClient.get<Question>('../../../apps/SEfrontend/src/assets/questions.json');
+  public getQuestions() : Observable<Question[]>{
+    return this.httpClient.get<Question[]>('assets/questions.json');
   }
 }
