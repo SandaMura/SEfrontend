@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { ConclusionsComponent } from './conclusions.component';
+import {ConclusionsRoutingModule} from "./conclusions-routing.module";
 
 
 
@@ -8,6 +9,7 @@ import { ConclusionsComponent } from './conclusions.component';
     ConclusionsComponent
   ],
   imports: [
+    ConclusionsRoutingModule
   ],
   exports: [
     ConclusionsComponent
