@@ -1,9 +1,15 @@
 
-<pre>{{ ConclusionsList | json }}</pre>
-
-<div class="flex justify-content-between">
-  <div style="background-color: red" class="col-4"></div>
-  <div style="background-color: blue" class="col-8">ergesrtg </div>
+<div *ngFor="let conclusion of ConclusionsList">
+  <div class="flex justify-content-between my-5">
+    <div class="col-4">
+      <img [src]="conclusion.imageUrl" alt="" width="100%" />
+    </div>
+    <div class="col-8">
+      <h2>{{conclusion.destinationName}}</h2>
+      <br>
+      <p>{{conclusion.description}}</p>
+    </div>
+  </div>
 </div>
 
 

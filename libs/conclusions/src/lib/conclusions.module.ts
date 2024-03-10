@@ -1,8 +1,8 @@
 import { NgModule } from '@angular/core';
 import { ConclusionsComponent } from './conclusions.component';
 import {ConclusionsRoutingModule} from "./conclusions-routing.module";
-import {JsonPipe} from "@angular/common";
 import {HttpClientModule} from "@angular/common/http";
+import {CommonModule, JsonPipe} from "@angular/common";
 
 
 @NgModule({
@@ -13,6 +13,7 @@ import {HttpClientModule} from "@angular/common/http";
     ConclusionsRoutingModule,
     JsonPipe,
     HttpClientModule,
+    CommonModule
   ],
   exports: [
     ConclusionsComponent
