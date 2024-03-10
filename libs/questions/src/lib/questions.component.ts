@@ -1,8 +1,6 @@
-import {Component} from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {QuestionsService} from "./questions.service";
 import { Question } from 'libs/domain/src/lib/question';
-import {OnInit} from '@angular/core';
-
 
 @Component({
   selector: 'lib-questions',
