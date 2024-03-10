@@ -2,12 +2,8 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'lib-conclusions',
-  template: `
-    <p>
-      conclusions works!
-    </p>
-  `,
-  styles: [
+  templateUrl:'conclusions.component.html',
+  styleUrls: ['conclusions.component.scss'
   ]
 })
 export class ConclusionsComponent {
