@@ -1,26 +1,15 @@
-<section>
+<div *ngFor="let question of QuestionsList">
+  <h4>{{question.question}}</h4>
+  <br>
+  <section *ngFor="let answer of question.answers; index as i">
   <div>
-    <input type="radio" id="control_01" name="select" value="1" checked>
-    <label for="control_01">
-      <h2>Pfft</h2>
-      <p>Awww, poor baby. Too afraid of the scary game sprites? I laugh at you.</p>
+    <input type="radio" [id]="i" name="select" [value]="answer.response">
+    <label [for]="i">
+      <p>{{ answer.response }}</p>
     </label>
   </div>
-  <div>
-    <input type="radio" id="control_02" name="select" value="2">
-    <label for="control_02">
-      <h2>Wannabe</h2>
-      <p>You're not a gaming God by any stretch of the imagination.</p>
-    </label>
-  </div>
-  <div>
-    <input type="radio" id="control_03" name="select" value="3">
-    <label for="control_03">
-      <h2>Daaamn</h2>
-      <p>Now we're talking. It's gettin' a bit hairy out there in game land.</p>
-    </label>
-  </div>
-</section>
+  </section>
+</div>
 
 <pre>{{ QuestionsList | json }}</pre>
 
