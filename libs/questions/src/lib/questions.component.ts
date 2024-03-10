@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {Component} from '@angular/core';
 import {QuestionsService} from "./questions.service";
 
 @Component({
@@ -8,13 +8,13 @@ import {QuestionsService} from "./questions.service";
 })
 export class QuestionsComponent {
 
-  constructor(private QuestionsService: QuestionsService){
+  constructor(private QuestionsService: QuestionsService) {
 
   }
 
-  public getQuestions(){
+  public getQuestions() {
     this.QuestionsService.getQuestions().subscribe({
-      next: respond=>{
+      next: respond => {
 
       }
 
