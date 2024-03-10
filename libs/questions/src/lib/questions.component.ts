@@ -1,6 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 import {QuestionsService} from "./questions.service";
-import { Question } from 'libs/domain/src/lib/question';
+import {Answer, Question} from 'libs/domain/src/lib/question';
 
 @Component({
   selector: 'lib-questions',
@@ -11,6 +11,7 @@ import { Question } from 'libs/domain/src/lib/question';
 export class QuestionsComponent implements OnInit{
 
   QuestionsList: Question[]=[];
+  finalAnswers: Answer[] = [];
 
   constructor(private QuestionsService: QuestionsService) {
 

@@ -1,5 +1,5 @@
 export interface Rule {
-  countryName: string;
+  destinationName: string;
   description: string;
   imageUrl: string;
   category: string;

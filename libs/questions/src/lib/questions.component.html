@@ -1,15 +1,14 @@
 <div *ngFor="let question of QuestionsList">
-  <h4>{{question.question}}</h4>
+  <h4>{{ question.questionText }}</h4>
   <br>
   <section *ngFor="let answer of question.answers; index as i">
-  <div>
-    <input type="radio" [id]="i" name="select" [value]="answer.response">
-    <label [for]="i">
-      <p>{{ answer.response }}</p>
-    </label>
-  </div>
+    <div>
+      <input type="radio" [id]="question.id + '_' + i" [(ngModel)]="finalAnswers[i]"
+             [name]="question.id!" [value]="answer">
+      <label [for]="question.id + '_' + i">
+        <p>{{ answer.response }}</p>
+      </label>
+    </div>
   </section>
 </div>
-
-<pre>{{ QuestionsList | json }}</pre>
 
