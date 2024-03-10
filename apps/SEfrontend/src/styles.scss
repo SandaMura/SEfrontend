@@ -1,2 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
-@import 'primeng/resources/themes/saga-green/theme.css';
+@import 'node_modules/primeng/resources/themes/saga-green/theme.css';
+@import "node_modules/primeng/resources/primeng.css";
+@import "node_modules/primeflex/primeflex.css";
+
+body{
+  background: url('/assets/images/bck.png');
+  background-repeat: no-repeat;
+  background-size: 100vw 100vh;
+}
