@@ -3,6 +3,8 @@ import { QuestionsComponent } from './questions.component';
 import {QuestionsRoutingModule} from "./questions-routing.module";
 import {RadioButtonModule} from "primeng/radiobutton";
 import {FormsModule} from "@angular/forms";
+import {HttpClientModule} from "@angular/common/http";
+import {CommonModule, JsonPipe} from "@angular/common";
 
 
 
@@ -13,7 +15,10 @@ import {FormsModule} from "@angular/forms";
   imports: [
     QuestionsRoutingModule,
     RadioButtonModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule,
+    JsonPipe,
+    CommonModule
   ],
   exports: [
     QuestionsComponent

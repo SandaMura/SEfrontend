@@ -9,6 +9,9 @@
     "noImplicitOverride": true,
     "noPropertyAccessFromIndexSignature": true,
     "paths": {
+      "conclusions": [
+        "dist/conclusions"
+      ],
       "inference-machine": [
         "dist/inference-machine"
       ]

@@ -12,6 +12,10 @@ const routes = [
       {
         path: 'questions',
         loadChildren: () => import('libs/questions/src/public-api').then(m => m.QuestionsModule)
+      },
+      {
+        path: 'conclusions',
+        loadChildren: () => import('libs/conclusions/src/public-api').then(m => m.ConclusionsModule)
       }
     ]
   }

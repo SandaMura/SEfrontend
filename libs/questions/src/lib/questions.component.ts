@@ -1,8 +1,33 @@
-import { Component } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
+import {QuestionsService} from "./questions.service";
+import {Answer, Question} from 'libs/domain/src/lib/question';
 
 @Component({
   selector: 'lib-questions',
   templateUrl: 'questions.component.html',
-  styleUrls: ['questions.component.scss']
+  styleUrls: ['questions.component.scss'],
+  providers: [QuestionsService]
 })
-export class QuestionsComponent {}
+export class QuestionsComponent implements OnInit{
+
+  QuestionsList: Question[]=[];
+  finalAnswers: Answer[] = [];
+
+  constructor(private QuestionsService: QuestionsService) {
+
+  }
+
+  ngOnInit(): void{
+    this.getQuestions();
+  }
+
+  public getQuestions() {
+    this.QuestionsService.getQuestions().subscribe({
+      next: respond => {
+            this.QuestionsList=respond;
+      }
+
+    })
+  }
+
+}

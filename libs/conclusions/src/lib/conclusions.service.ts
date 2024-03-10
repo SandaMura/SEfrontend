@@ -1,18 +1,19 @@
 import { Injectable } from '@angular/core';
 import {HttpClient} from "@angular/common/http";
-import { Question } from 'libs/domain/src/lib/question';
 import {Observable} from "rxjs";
+import {Rule} from 'libs/domain/src/lib/rule';
 
 @Injectable({
   providedIn: 'root'
 })
-export class QuestionsService {
+
+export class ConclusionsService {
 
   constructor(private httpClient: HttpClient) {
 
   }
 
-  public getQuestions() : Observable<Question[]>{
-    return this.httpClient.get<Question[]>('assets/questions.json');
+  public getConclusions(): Observable<Rule[]> {
+    return this.httpClient.get<Rule[]>('assets/conclusion.json');
   }
 }
