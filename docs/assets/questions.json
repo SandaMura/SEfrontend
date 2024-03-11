@@ -1,0 +1,42 @@
+[
+  {
+    "id": "category",
+    "questionText": "Ce preferi sa bei?",
+    "answers": [
+      {
+        "id": "category",
+        "response": "ceai"
+      },
+      {
+        "id": "category",
+        "response": "cocktail"
+      },
+      {
+        "id": "category",
+        "response": "apa"
+      },
+      {
+        "id": "category",
+        "response": "bauturi nealcolice"
+      }
+    ]
+  },
+  {
+    "id": "budget",
+    "questionText": "Cat vrei sa cheltui pe zi?",
+    "answers": [
+      {
+        "id": "budget",
+        "response": "10-50"
+      },
+      {
+        "id": "budget",
+        "response": "50-100"
+      },
+      {
+        "id": "budget",
+        "response": "100-200"
+      }
+    ]
+  }
+]
