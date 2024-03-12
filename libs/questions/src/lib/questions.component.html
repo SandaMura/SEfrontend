@@ -1,14 +1,16 @@
-<div *ngFor="let question of QuestionsList">
+<h1 class="flex col-12 justify-content-center text-7xl mt-5 mb-7" style="color: #1c80cf; font-style: italic;">Find your perfect destination!</h1>
+
+<div *ngFor="let question of questionsList">
   <h4>{{ question.questionText }}</h4>
   <br>
   <section *ngFor="let answer of question.answers; index as i">
-    <div>
-      <input type="radio" [id]="question.id + '_' + i" [(ngModel)]="finalAnswers[i]"
-             [name]="question.id!" [value]="answer">
-      <label [for]="question.id + '_' + i">
-        <p>{{ answer.response }}</p>
-      </label>
-    </div>
+  <div>
+    <input type="radio" [id]="question.id + '' + i" [(ngModel)]="answers[question.id]"
+           [name]="question.id" [value]="answer">
+    <label [for]="question.id + '' + i">
+      <p>{{ answer.response }}</p>
+    </label>
+  </div>
   </section>
 </div>
 
