@@ -82,8 +82,9 @@ export class QuestionsComponent implements OnInit {
   }
 
   public submit() {
-    //todo: map answers to finalAnswers
-    //todo: send finalAnswers to inferenceMachine
-  }
+      this.finalAnswers = Object.values(this.answers);
+      console.log(this.answers, this.finalAnswers);
+      this.inferenceMachine.processAnswers(this.finalAnswers);
+    }
 
 }
