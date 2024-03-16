@@ -4,6 +4,6 @@ export interface Database {
   meta: {
     description: string;
     types: {[p: string]: string[] | number[]};
-    answers: Rule[];
-  }
+  };
+  answers: Rule[];
 }
