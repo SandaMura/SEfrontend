@@ -1,33 +1,22 @@
-import { Component } from '@angular/core';
-import {ConclusionsService} from "./conclusions.service";
+import {Component, OnInit} from '@angular/core';
 
 import {Rule} from 'libs/domain/src/lib/rule';
 
 @Component({
   selector: 'lib-conclusions',
   templateUrl:'conclusions.component.html',
-  styleUrls: ['conclusions.component.scss'
-  ],
-  providers: [ConclusionsService]
+  styleUrls: ['conclusions.component.scss']
 })
-export class ConclusionsComponent {
+export class ConclusionsComponent implements OnInit{
 
-  ConclusionsList: Rule[]=[];
-  constructor(private ConclusionsService: ConclusionsService) {
-
-  }
+  conclusionsList: Rule[]=[];
 
   ngOnInit(): void{
     this.getConclusions();
   }
 
   public getConclusions() {
-    this.ConclusionsService.getConclusions().subscribe({
-      next: respond => {
-        this.ConclusionsList=respond;
-      }
-
-    })
+    this.conclusionsList = JSON.parse(localStorage.getItem("conclusions")!);
   }
 }
 

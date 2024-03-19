@@ -3,10 +3,13 @@
 @import "node_modules/primeng/resources/primeng.css";
 @import "node_modules/primeflex/primeflex.css";
 
+* {
+  color: #3D405B;
+}
+
 body{
   background: url('/assets/images/bck.png');
   background-repeat: no-repeat;
   background-size: 100vw 100vh;
   background-attachment: fixed;
 }
-
