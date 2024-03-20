@@ -18,6 +18,12 @@ MIT
 
 conclusions
 
+domain
+
+inference-machine
+
+menu
+
 primeflex
 MIT
 The MIT License (MIT)
