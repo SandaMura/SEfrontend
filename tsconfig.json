@@ -20,6 +20,9 @@
       ],
       "@inference-machine/*": [
         "libs/inference-machine/src/lib/*"
+      ],
+      "menu": [
+        "dist/menu"
       ]
     },
     "noImplicitReturns": true,

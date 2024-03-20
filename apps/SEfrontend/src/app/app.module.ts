@@ -10,6 +10,10 @@ const routes = [
     path: '',
     children: [
       {
+        path: '',
+        loadChildren: () => import('libs/menu/src/public-api').then(m => m.MenuModule)
+      },
+      {
         path: 'questions',
         loadChildren: () => import('libs/questions/src/public-api').then(m => m.QuestionsModule)
       },

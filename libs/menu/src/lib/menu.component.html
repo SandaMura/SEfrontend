@@ -1,0 +1,19 @@
+<button pButton pRipple (click)="showDialog()" icon="pi pi-external-link" label="Show the team"
+          class="mx-auto my-5 p-button-primary p-button-lg"
+>
+</button>
+<p-dialog header="Componența echipei:" [(visible)]='visible' [style]="{width: '50vw'}" >
+  <pre>
+        Frățilă Alexandra-Gabriela – baza_cunoștiințe
+
+        Mura Sanda – interfața
+
+        Neguriță Diana – inferența
+
+  </pre>
+</p-dialog>
+
+<h1 class="flex col-12 justify-content-center text-7xl mt-5 mb-7" style="color: #1c80cf; font-style: italic;">Welcome!</h1>
+
+<button pButton pRipple (click)='goToQuestions()' class="flex mx-auto my-5 p-button-primary p-button-lg">Go to questions!
+  </button>

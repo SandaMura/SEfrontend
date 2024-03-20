@@ -1,0 +1,8 @@
+.p-button-primary {
+  color: white !important;
+  background-color: #81B29A;
+
+  &:hover, &:active {
+    background-color: #3D405B;
+  }
+}
