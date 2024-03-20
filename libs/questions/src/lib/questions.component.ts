@@ -13,7 +13,9 @@ import {InferenceMachineService} from "@inference-machine/inference-machine.serv
 export class QuestionsComponent implements OnInit {
 
   questionsList: Question[] = [];
-  answers: {[p: string]: Answer} = {};
+  answers: {[p: string]: Answer} = {
+    'scope': {id: IdType.CATEGORY, response: []},
+  };
   finalAnswers: Answer[] = [];
 
   constructor(private questionsService: QuestionsService, private inferenceMachine: InferenceMachineService) {
@@ -78,6 +80,16 @@ export class QuestionsComponent implements OnInit {
       default: {
         throw new Error("not one of the excepted strings!");
       }
+    }
+  }
+
+  onChange(answer: string, checked: boolean) {
+    console.log(this.answers['scope'])
+    const index = (<string[]>this.answers['scope'].response).indexOf(answer);
+    if(checked && index < 0) {
+      this.answers['scope'].response = [...<string[]>this.answers['scope'].response, answer];
+    } else if(!checked && index >= 0) {
+      (<string[]>this.answers['scope'].response).splice(index, 1);
     }
   }
 

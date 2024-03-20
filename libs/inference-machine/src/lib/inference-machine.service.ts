@@ -106,9 +106,11 @@ export class InferenceMachineService {
   }
 
   private filterRuleForScopes(destination: Rule, scopes: Array<string>) {
-    let ok = true;
+    let ok = false;
     scopes.forEach(s => {
-      //todo
+      destination.scope.forEach(ds => {
+        if(s === ds) ok = true;
+      })
     });
     return ok;
   }

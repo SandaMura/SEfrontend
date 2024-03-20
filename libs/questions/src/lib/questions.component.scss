@@ -6,7 +6,7 @@ section > div {
   flex: 1;
   padding: 0.5rem;
 }
-input[type="radio"] {
+input[type="radio"], input[type="checkbox"] {
   display: none;
   cursor: pointer;
 }
@@ -22,7 +22,7 @@ label {
   box-shadow: 0 3px 10px -2px hsla(150, 5%, 65%, 0.5);
   position: relative;
 }
-input[type="radio"]:checked + label {
+input[type="radio"]:checked + label, input[type="checkbox"]:checked + label {
   background: #81B29A;
   color: hsla(215, 0%, 100%, 1);
   box-shadow: 0 0 20px #81B29A;
