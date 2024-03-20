@@ -14,7 +14,7 @@ export class QuestionsComponent implements OnInit {
 
   questionsList: Question[] = [];
   answers: {[p: string]: Answer} = {
-    'scope': {id: IdType.CATEGORY, response: []},
+    'scope': {id: IdType.SCOPE, response: []},
   };
   finalAnswers: Answer[] = [];
 
