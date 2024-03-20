@@ -1,13 +1,12 @@
 section {
   display: flex;
   flex-direction: row;
-  //flex-flow: row wrap;
 }
 section > div {
   flex: 1;
   padding: 0.5rem;
 }
-input[type="radio"] {
+input[type="radio"], input[type="checkbox"] {
   display: none;
   cursor: pointer;
 }
@@ -15,7 +14,7 @@ label {
   height: 100%;
   display: block;
   background: white;
-  border: 2px solid hsla(150, 75%, 50%, 1);
+  border: 2px solid #81B29A;
   border-radius: 20px;
   padding: 1rem;
   margin-bottom: 1rem;
@@ -23,14 +22,23 @@ label {
   box-shadow: 0 3px 10px -2px hsla(150, 5%, 65%, 0.5);
   position: relative;
 }
-input[type="radio"]:checked + label {
-  background: hsla(150, 75%, 50%, 1);
+input[type="radio"]:checked + label, input[type="checkbox"]:checked + label {
+  background: #81B29A;
   color: hsla(215, 0%, 100%, 1);
-  box-shadow: 0 0 20px hsla(150, 100%, 50%, 0.75);
+  box-shadow: 0 0 20px #81B29A;
 }
 
 p {
   font-weight: 900;
+}
+
+.p-button-primary {
+  color: white;
+  background-color: #81B29A;
+
+  &:hover, &:active {
+    background-color: #3D405B;
+  }
 }
 
 

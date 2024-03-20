@@ -1,12 +1,12 @@
 import {IdType} from "./id-type";
 
-export class Answer {
-  id: IdType | undefined;
-  response: string | number | undefined;
+export interface Answer {
+  id: IdType;
+  response: string | number | Array<string>;
 }
 
-export class Question {
-  id: IdType | undefined;
-  questionText: string | undefined;
-  answers: Array<Answer> | undefined;
+export interface Question {
+  id: IdType;
+  questionText: string;
+  answers: Array<Answer>;
 }

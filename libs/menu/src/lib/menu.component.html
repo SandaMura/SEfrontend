@@ -1,0 +1,22 @@
+<button pButton pRipple (click)="showDialog()" icon="pi pi-external-link" label="Show the team"
+          class="mx-auto my-5 p-button-primary p-button-lg"
+>
+</button>
+<p-dialog header="Componența echipei:" [(visible)]='visible' [style]="{width: '50vw'}" >
+  <pre>
+        Frățilă Alexandra-Gabriela – baza_cunoștiințe
+
+        Mura Sanda – interfața
+
+        Neguriță Diana – inferența
+
+  </pre>
+</p-dialog>
+
+<h1 class="flex col-12 justify-content-center text-7xl mt-5 mb-7" style="color: #1c80cf; font-style: italic;">Welcome!</h1>
+
+<p class="flex col-12 justify-content-center text-2xl font-bold mt-5 mb-7" style="color: #1c80cf;">Această aplicație este destinată tuturor pasionaților de călătorii, indiferent de vârstă.
+  Proiectul nostru presupune un sistem expert care generează destinațiile potrivite în funcție de preferințele utilizatorului, oferind totodată o descriere concisă despre acestea. Scopul acestui proiect este de a veni în ajutorul pasionaților de călători cu destinații potrivite stilului acestora de viață.</p>
+
+  <button pButton pRipple (click)='goToQuestions()' class="flex mx-auto my-5 p-button-primary p-button-lg">Go to questions!
+  </button>

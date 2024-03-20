@@ -9,11 +9,20 @@
     "noImplicitOverride": true,
     "noPropertyAccessFromIndexSignature": true,
     "paths": {
-      "conclusions": [
-        "dist/conclusions"
+      "@domain/*": [
+        "libs/domain/src/lib/*"
       ],
-      "inference-machine": [
-        "dist/inference-machine"
+      "@questions/*": [
+        "libs/questions/src/lib/*"
+      ],
+      "@conclusions/*": [
+        "libs/conclusions/src/lib/*"
+      ],
+      "@inference-machine/*": [
+        "libs/inference-machine/src/lib/*"
+      ],
+      "@menu/*": [
+        "libs/menu/src/lib/*"
       ]
     },
     "noImplicitReturns": true,
@@ -24,14 +33,6 @@
     "experimentalDecorators": true,
     "moduleResolution": "node",
     "importHelpers": true,
-    "paths": {
-      "domain": [
-        "dist/domain"
-      ],
-      "questions": [
-        "dist/questions"
-      ]
-    },
     "target": "ES2022",
     "module": "ES2022",
     "useDefineForClassFields": false,

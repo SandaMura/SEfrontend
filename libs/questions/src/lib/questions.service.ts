@@ -1,7 +1,7 @@
-import { Injectable } from '@angular/core';
+import {Injectable} from '@angular/core';
 import {HttpClient} from "@angular/common/http";
-import { Question } from 'libs/domain/src/lib/question';
-import {Observable} from "rxjs";
+import {map, Observable} from "rxjs";
+import {Database} from '@domain/database';
 
 @Injectable({
   providedIn: 'root'
@@ -12,7 +12,9 @@ export class QuestionsService {
 
   }
 
-  public getQuestions() : Observable<Question[]>{
-    return this.httpClient.get<Question[]>('assets/questions.json');
+  public getQuestions(): Observable<{ [p: string]: string[] | number[] }> {
+    return this.httpClient.get<Database>('assets/database.json').pipe(
+      map(res => res.meta.types)
+    );
   }
 }
