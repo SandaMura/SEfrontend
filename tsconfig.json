@@ -21,8 +21,8 @@
       "@inference-machine/*": [
         "libs/inference-machine/src/lib/*"
       ],
-      "menu": [
-        "dist/menu"
+      "@menu/*": [
+        "libs/menu/src/lib/*"
       ]
     },
     "noImplicitReturns": true,
