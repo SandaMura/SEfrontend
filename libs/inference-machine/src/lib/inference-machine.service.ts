@@ -75,24 +75,24 @@ export class InferenceMachineService {
         case IdType.BUDGET: {
           if(a.response === 50 && destination[IdType.BUDGET] > a.response) {
             ok = false;
-          } else if(a.response === 150 && !(destination[IdType.BUDGET] <= 150 && destination[IdType.BUDGET] > 50)){
+          } else if(a.response === 150 && destination[IdType.BUDGET] > a.response){
             ok = false;
-          } else if(a.response === 400 && !(destination[IdType.BUDGET] <= 400 && destination[IdType.BUDGET] > 150)){
+          } else if(a.response === 400 && destination[IdType.BUDGET] > a.response){
             ok = false;
-          } else if(a.response === 500 && !(destination[IdType.BUDGET] > 400)){
-            ok = false;
+          // } else if(a.response === 500 && destination[IdType.BUDGET] > a.response){
+          //   ok = false;
           }
           break;
         }
         case IdType.DISTANCE: {
           if(a.response === 500 && destination[IdType.DISTANCE] > a.response) {
             ok = false;
-          } else if(a.response === 1000 && !(destination[IdType.DISTANCE] <= 1000 && destination[IdType.DISTANCE] > 500)){
+          } else if(a.response === 1000 && destination[IdType.DISTANCE] > a.response){
             ok = false;
-          } else if(a.response === 2000 && !(destination[IdType.DISTANCE] <= 2000 && destination[IdType.DISTANCE] > 1000)){
+          } else if(a.response === 2000 && destination[IdType.DISTANCE] > a.response){
             ok = false;
-          } else if(a.response === 3000 && !(destination[IdType.DISTANCE] > 2000)){
-            ok = false;
+          // } else if(a.response === 3000 && !(destination[IdType.DISTANCE] > 2000)){
+          //   ok = false;
           }
           break;
         }
